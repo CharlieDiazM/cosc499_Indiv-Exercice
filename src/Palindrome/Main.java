@@ -17,6 +17,7 @@ public class Main {
 		System.out.println(stringPalindrome(word));
 	}
 	
+	//check if number is palindrome 
 	public static boolean numberPalindrome(int num) {
 		int newNum = 0;
 		int rem;
@@ -35,6 +36,7 @@ public class Main {
 		}
 	}
 	
+	//check if string is palindrome
 	public static boolean stringPalindrome(String str) {
 		String newString = "";
 		int max = str.length();

@@ -8,8 +8,8 @@ public class Test_Palin_Num {
 
 	@Test
 	public void testPalindNum() {
-		assertEquals(true,Main.numberPalindrome(123321));
-		assertEquals(true,Main.numberPalindrome(56765));
-		assertEquals(false,Main.numberPalindrome(4567));
+		assertTrue(Main.numberPalindrome(123321));
+		assertTrue(Main.numberPalindrome(56765));
+		assertFalse(Main.numberPalindrome(4567));
 	}
 }

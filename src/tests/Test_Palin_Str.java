@@ -8,7 +8,7 @@ public class Test_Palin_Str {
 
 	@Test
 	public void testPalindStr() {
-		assertEquals(true,Main.stringPalindrome("level"));
-		assertEquals(false,Main.stringPalindrome("hello"));
+		assertTrue(Main.stringPalindrome("level"));
+		assertFalse(Main.stringPalindrome("hello"));
 	}
 }

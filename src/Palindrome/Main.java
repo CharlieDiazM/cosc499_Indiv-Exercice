@@ -7,11 +7,14 @@ public class Main {
 		// TODO Auto-generated method stub
 		Scanner input = new Scanner(System.in);
 		int number;
+		String word;
 		
-		System.out.println("Enter a number:");
+		System.out.println("Enter a number and a word:");
 		number = input.nextInt();
+		word = input.next();
 		
 		System.out.println(numberPalindrome(number));
+		System.out.println(stringPalindrome(word));
 	}
 	
 	public static boolean numberPalindrome(int num) {
@@ -26,6 +29,20 @@ public class Main {
 		}
 		
 		if(prevNum == newNum) {
+			return true;
+		}else {
+			return false;
+		}
+	}
+	
+	public static boolean stringPalindrome(String str) {
+		String newString = "";
+		int max = str.length();
+		for(int i = max - 1; i >= 0; i--) {
+			newString = newString + str.charAt(i);
+		}
+		
+		if(str.equals(newString)) {
 			return true;
 		}else {
 			return false;
